@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Temperature Converter</title>
+    <script src="jscript.js"></script>
+    <link href="styles.css" type="text/css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container">
+      <form onsubmit="return validateInput()">
+        <table>
+          <tr>
+            <th colspan="2" class="title">Temperature Converter</th>
+          </tr>
+          <tr>
+            <td>
+              <input type="text" placeholder="Temperature" id="inp" />
+            </td>
+            <td>
+              <select id="temp" name="temp">
+                <option value="fah">Fahrenheit</option>
+                <option value="cel">Celsius</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2"><p id="res"></p></td>
+          </tr>
+          <tr>
+            <td colspan="2" align="center"><button type="submit">Calculate</button></td>
+          </tr>
+        </table>
+      </form>
+    </div>
+  </body>
+</html>
